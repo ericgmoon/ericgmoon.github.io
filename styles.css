@@ -24,12 +24,12 @@ body, html {
 }
 
 .content {
-  position: absolute;
+  position: relative;
   display: flex;
   flex-direction: column;
-  right: 0;
+  float: right;
   height: 100%;
-  margin-right: 15%;
+  width: 50%;
   justify-content: center;
 }
 
@@ -84,17 +84,12 @@ body, html {
 }
 
 #child {
+  margin-left: 10%;
   width: fit-content;
 }
 
-@media (max-width:500px) {
+@media (max-width:700px) {
   .content {
-    margin-right: 0;
     width: 100%;
-    position: relative;
-  }
-  
-  #child {
-    margin-left: 10%;
   }
 }
